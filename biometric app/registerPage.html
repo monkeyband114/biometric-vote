@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voters Registration</title>
+</head>
+<body>
+    <h1>Voters Registration</h1>
+    <form action="register.php" method="post" enctype="multipart/form-data">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" required><br>
+
+        <label for="voter_id">Voter ID:</label>
+        <input type="number" name="voter_id" required><br>
+
+        <label for="address">Address:</label>
+        <textarea name="address" required></textarea><br>
+
+        <label for="fingerprint">Fingerprint Image:</label>
+        <input type="file" name="fingerprint" accept=".bmp, .jpg, .png" required><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
